@@ -3,9 +3,7 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 addElementToBeginningOfArray([1], "foo")
 
 function addElementToBeginningOfArray(arr, el) {
-  let new_arr = new Array(arr)
-  new_arr.unshift(el)
-  return new_arr
+  return [el, ...arr]
 }
 
 function destructivelyAddElementToBeginningOfArray(arr, el) {
@@ -13,7 +11,5 @@ function destructivelyAddElementToBeginningOfArray(arr, el) {
 }
 
 function addElementToEndOfArray(arr, el) {
-  let new_arr = arr
-  new_arr = new_arr.push(el)
-  return new_arr
+  return [...arr, el]
 }
