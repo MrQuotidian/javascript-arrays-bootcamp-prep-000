@@ -5,7 +5,7 @@ addElementToBeginningOfArray([1], "foo")
 function addElementToBeginningOfArray(arr, el) {
   let new_arr = new Array(arr)
   console.log(new_arr)
-  new_arr = new_arr.unshift(el)
+  new_arr.unshift(el)
   console.log(new_arr)
   return new_arr
 }
